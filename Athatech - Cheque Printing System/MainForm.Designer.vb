@@ -24,10 +24,11 @@ Partial Class MainForm
     Private Sub InitializeComponent()
         Me.NuiPanel1 = New Nevron.UI.WinForm.Controls.NUIPanel()
         Me.NuiPanel2 = New Nevron.UI.WinForm.Controls.NUIPanel()
+        Me.NButton4 = New Nevron.UI.WinForm.Controls.NButton()
         Me.NButton3 = New Nevron.UI.WinForm.Controls.NButton()
         Me.NButton1 = New Nevron.UI.WinForm.Controls.NButton()
         Me.NButton2 = New Nevron.UI.WinForm.Controls.NButton()
-        Me.NButton4 = New Nevron.UI.WinForm.Controls.NButton()
+        Me.NButton5 = New Nevron.UI.WinForm.Controls.NButton()
         Me.NuiPanel2.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,6 +46,7 @@ Partial Class MainForm
         'NuiPanel2
         '
         Me.NuiPanel2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.NuiPanel2.Controls.Add(Me.NButton5)
         Me.NuiPanel2.Controls.Add(Me.NButton4)
         Me.NuiPanel2.Controls.Add(Me.NButton3)
         Me.NuiPanel2.Controls.Add(Me.NButton1)
@@ -56,6 +58,17 @@ Partial Class MainForm
         Me.NuiPanel2.TabIndex = 1
         Me.NuiPanel2.Text = "NuiPanel2"
         Me.NuiPanel2.UseCustomScrollBars = True
+        '
+        'NButton4
+        '
+        Me.NButton4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NButton4.Location = New System.Drawing.Point(10, 360)
+        Me.NButton4.Name = "NButton4"
+        Me.NButton4.Palette.Scheme = Nevron.UI.WinForm.Controls.ColorScheme.Office2007Blue
+        Me.NButton4.Size = New System.Drawing.Size(171, 50)
+        Me.NButton4.TabIndex = 4
+        Me.NButton4.Text = "طباعة شيك"
+        Me.NButton4.UseVisualStyleBackColor = False
         '
         'NButton3
         '
@@ -91,16 +104,16 @@ Partial Class MainForm
         Me.NButton2.Text = "ادخال شيك"
         Me.NButton2.UseVisualStyleBackColor = False
         '
-        'NButton4
+        'NButton5
         '
-        Me.NButton4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NButton4.Location = New System.Drawing.Point(10, 360)
-        Me.NButton4.Name = "NButton4"
-        Me.NButton4.Palette.Scheme = Nevron.UI.WinForm.Controls.ColorScheme.Office2007Blue
-        Me.NButton4.Size = New System.Drawing.Size(171, 50)
-        Me.NButton4.TabIndex = 4
-        Me.NButton4.Text = "طباعة شيك"
-        Me.NButton4.UseVisualStyleBackColor = False
+        Me.NButton5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NButton5.Location = New System.Drawing.Point(10, 304)
+        Me.NButton5.Name = "NButton5"
+        Me.NButton5.Palette.Scheme = Nevron.UI.WinForm.Controls.ColorScheme.Office2007Blue
+        Me.NButton5.Size = New System.Drawing.Size(171, 50)
+        Me.NButton5.TabIndex = 5
+        Me.NButton5.Text = "طباعة شيك"
+        Me.NButton5.UseVisualStyleBackColor = False
         '
         'MainForm
         '
@@ -122,4 +135,5 @@ Partial Class MainForm
     Friend WithEvents NButton1 As Nevron.UI.WinForm.Controls.NButton
     Friend WithEvents NButton3 As Nevron.UI.WinForm.Controls.NButton
     Friend WithEvents NButton4 As Nevron.UI.WinForm.Controls.NButton
+    Friend WithEvents NButton5 As Nevron.UI.WinForm.Controls.NButton
 End Class
